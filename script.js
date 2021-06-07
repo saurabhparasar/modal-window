@@ -9,4 +9,14 @@ for (let i = 0; i < btnOpenModal.length; i++)
   btnOpenModal[i].addEventListener("click", function () {
     console.log("button clicked");
     modal.classList.remove("hidden");
+    overlay.classList.remove("hidden");
   });
+
+const closeBtn = function () {
+  modal.classList.add("hidden");
+  overlay.classList.add("hidden");
+};
+
+btnCloseModal.addEventListener("click", closeBtn);
+
+overlay.addEventListener("click", closeBtn);
