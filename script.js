@@ -1,9 +1,11 @@
 "use strict";
-
+// modal code
 const modal = document.querySelector(".modal");
 const overlay = document.querySelector(".overlay");
 const btnCloseModal = document.querySelector(".close-modal");
 const btnOpenModal = document.querySelectorAll(".show-modal");
+
+// functions used in event listners
 
 const openModal = function () {
   modal.classList.remove("hidden");
